@@ -1,0 +1,13 @@
+image_width: 640
+image_height: 480
+camera_name: camr
+camera_matrix:
+  rows: 3
+  cols: 3
+  data: [595.769226118, 0.0, 315.630153866, 0.0, 601.100099736, 249.900958294, 0.0, 0.0, 1.0]
+distortion_model: equidistant
+distortion_coefficients:
+  rows: 1
+  cols: 4
+  data: [0.360048202645, 1.38084511511, -8.16744585152, 13.4516399414]
+
