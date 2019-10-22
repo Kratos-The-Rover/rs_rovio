@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<launch>
+  <remap from="cam0/image_raw" to="/camera/color/image_mono"/>
+  <!-- <remap from="cam1/image_raw" to="/camera/infra2/image_rect_raw"/> -->
+  <remap from="imu0" to="/camera/imu"/>
+
+  <node pkg="rovio" type="rovio_node" name="rovio" output="screen">
+  <param name="filter_config" value="$(find rovio)/cfg/rovio_custom.info"/>
+  <param name="camera0_config" value="$(find rovio)/cfg/rovio_camr.yaml"/>
+  <!-- <param name="camera1_config" value="$(find rovio)/cfg/rovio_cam2.yaml"/> -->
+  </node>
+
+</launch>
